@@ -29,8 +29,7 @@ i=1
 host=$1
 
 while true; do 
-	ping=$(ping -t $i -c 1 -W $timeout $host | grep -E "From|from")
-
+	ping=$(ping -t $i -c 1 -W $timeout $host | grep -E "From|from") || exit 1
 	if [[ $(echo $ping | cut -d ' ' -f 1) == "64" ]]
 		then
 			#For last hop in route:
