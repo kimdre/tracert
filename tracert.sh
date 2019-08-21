@@ -1,24 +1,17 @@
 #!/bin/bash
+#https://github.com/Projekt95/tracert
+#tracert is licensed under the GNU General Public License v3.0
+
+tabs 8
 
 if [[ -z "$1" || "$@" == *'-h'* ]]
 	then echo -e "Usage:
  $(basename -- $0) [IP]
  $(basename -- $0) [DOMAIN]
 
+Github:
+https://Github.com/Projekt95/tracert"; exit
 
-Erstellt von Kim Drechsel"; exit
-
-fi
-
-
-if [[ "$1" =~ [1-9][0-9].. && ${#1} == 4 ]]
-then
-	ip1=$(echo $1 | grep -oe "^[1-9][0-9]" )
-	ip2=$(echo $1 | grep -oP "[1-9]$|[1-9][0-9]$" )
-	if [[ "$ip2" == '' ]]; then ip2=0; fi
-	host=10.$ip1.$ip2.1
-else
-	host=$1
 fi
 
 
