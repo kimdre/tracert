@@ -2,7 +2,6 @@
 #https://github.com/Projekt95/tracert
 #tracert is licensed under the GNU General Public License v3.0
 
-tabs 8
 
 if [[ -z "$1" || "$@" == *'-h'* ]]
 	then echo -e "Usage:
