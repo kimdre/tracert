@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Projekt95/tracert.svg?branch=master)](https://travis-ci.org/Projekt95/tracert)
+[![Build Status](https://drone.pyas.de/api/badges/Kim/tracert/status.svg)](https://drone.pyas.de/Kim/tracert)
 
 # tracert
 Simple and very fast traceroute tool for linux
