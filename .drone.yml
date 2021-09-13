@@ -1,0 +1,10 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: test
+    image: ubuntu:latest
+    pull: if-not-exists
+    commands:
+      - ./tracert.sh google.com
