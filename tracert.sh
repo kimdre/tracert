@@ -8,8 +8,8 @@ if [[ -z "$1" || "$@" == *'-h'* ]]
  $(basename -- $0) [IP]
  $(basename -- $0) [DOMAIN]
 
-Github:
-https://Github.com/Projekt95/tracert"; exit
+Git Source:
+https://git.pyas.de/Kim/tracert"; exit
 
 fi
 
